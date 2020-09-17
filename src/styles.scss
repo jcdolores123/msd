@@ -1,0 +1,319 @@
+/* You can add global styles to this file, and also import other style files */
+/* Variables
+************************************************************************************************/
+@import "assets/scss/variables";
+
+/* Mixins
+************************************************************************************************/
+@import "assets/scss/mixins";
+
+/* Material CSS Components
+************************************************************************************************/
+@import "assets/scss/materialcss/grid";
+@import "assets/scss/materialcss/waves";
+@import "assets/scss/materialcss/input-fields";
+@import "assets/scss/materialcss/radio-buttons";
+@import "assets/scss/materialcss/checkboxes";
+@import "assets/scss/materialcss/modal";
+@import "assets/scss/materialcss/navbar";
+@import "assets/scss/materialcss/sideNav";
+@import "assets/scss/materialcss/buttons";
+@import "assets/scss/materialcss/collapsible";
+@import "assets/scss/materialcss/preloader";
+
+/* Material Custom CSS Components
+************************************************************************************************/
+@import "assets/scss/materialcustomcss/grid";
+@import "assets/scss/materialcustomcss/waves";
+@import "assets/scss/materialcustomcss/input-fields";
+@import "assets/scss/materialcustomcss/checkboxes";
+@import "assets/scss/materialcustomcss/modal";
+@import "assets/scss/materialcustomcss/navbar";
+@import "assets/scss/materialcustomcss/sideNav";
+@import "assets/scss/materialcustomcss/button";
+@import "assets/scss/materialcustomcss/preloader";
+
+/* Fonts
+************************************************************************************************/
+
+
+
+
+body {
+  // font-family: $primary-font-family;
+  -ms-overflow-style: scrollbar; //For IE scrollbar overlap
+  // font-family: "DM-Sans-Regular" !important;
+  font-family: "IBMPlexSans, Arial, sans-serif" !important;
+  color: #213342;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.row:after,
+.row:before {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+.timerContainer {
+  color: #ff4d03;
+  float: left;
+  list-style: none;
+  margin: 6px;
+  padding: 6px;
+  width: auto;
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 18px;
+  p {
+    color: #2f2f2f;
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+
+hr {
+  border-top: 1px solid #E5E5E5;
+  margin: 15px 0;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  resize: none;
+}
+button.close {
+  -webkit-appearance: none;
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+}
+.bdf {
+  &-btn {
+    //   border-radius:4px;
+
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    &.primary {
+      background-color: $button_primary;
+      //   color: $primary_1;
+      color: #fff;
+      padding: 7px;
+      font-weight: 900;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &.secondary {
+      background-color: $primary_1;
+      color: #fff;
+      //   border:1px solid $blue;
+      padding: 6px;
+    }
+  }
+}
+
+.price {
+  margin: 6px 0;
+  // color: $secondary_1;
+  color: #f25b50;
+  @include font-size-for-all-screens(13px, 13px, 15px, 15px);
+}
+
+.discounted-price {
+  // color: $pink;
+  color: $primary_1;
+  font-size: 12px;
+}
+
+.original-price {
+  color: #353333;
+  text-decoration: line-through;
+  font-size: 15px !important;
+}
+
+.strikethrough {
+  color: #5454546b;
+}
+
+.isbestSeller,
+.isNewArrival {
+  color: $primary-darker;
+}
+
+.bread-detail {
+  color: $grey;
+}
+
+.brand-name {
+  color: $primary_1;
+  // font-family: $primary-font-family;
+  font-weight: bold;
+}
+
+a:hover,
+a:active {
+  cursor: pointer;
+}
+
+li:hover,
+li:active {
+  // color: $pink;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  cursor: pointer;
+}
+
+//product detail page
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.zh {
+  & .product-name {
+    line-height: 17px !important;
+   height: 36px !important;
+
+    @supports (-webkit-overflow-scrolling: touch) {
+      @media #{$small-and-down}{
+        height: 33px !important;
+      }
+    }
+
+  }
+  & .brand-name {
+    font-size: 16px !important;
+  }
+}
+
+.online-only-tag {
+  background: $pink;
+  font-size: 14px;
+  color: white;
+  width: 70px;
+  // height: 60px;
+  text-align: center;
+  padding: 10px 3px;
+  line-height: 16px;
+  max-height: 60px;
+}
+
+.free-gift-tag {
+  background: $yellow;
+  font-size: 14px;
+  color: white;
+  width: 70px;
+  // height: 60px;
+  text-align: center;
+  padding: 10px 3px;
+  line-height: 16px;
+  max-height: 60px;
+}
+
+.discount-tag {
+  // background: $blue;
+  color: $secondary;
+  font-size: 13px;
+  @media #{$medium-and-up} {
+    font-size: 14px;
+  }
+  display: inline-block;
+  // width: 70px;
+  text-align: center;
+  // @media #{$medium-and-up} {
+  //     font-size: 18px;
+  // }
+}
+
+.amount-saved-tag {
+  color: $primary_1;
+  font-size: 13px;
+  display: inline-block;
+  @media #{$medium-and-up} {
+    font-size: 14px;
+  }
+}
+
+.page-error {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 50px;
+}
+
+//limits paragraph to 2 lines
+p {
+  &.limit-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    // do not remove on and off
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+}
+}
+
+//lock screen when modal is open
+.modal-open {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+
+
+.custom-container{
+  margin: 0 8%;
+}
+
+.bg-container{
+  background: #DAE0E6;
+}
+
+.custom-button{
+  background-color: white;
+  border: 1px solid #426CB4;
+  /* border-color: #426CB4; */
+  color: #426CB4;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+
+.bg-header{
+  background: #426CB4;
+  color: white;
+}

@@ -1,0 +1,405 @@
+/* Fonts
+========================================================================== */
+$icons-font-path: "/assets/fonts/icons/" !default;
+
+/* Image URL
+========================================================================== */
+$image-url: "/assets/images/";
+
+/* Typography
+========================================================================== */
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;
+
+$xxl-fontsize: 1.5rem !default;
+$xl-fontsize: 1.35rem !default;
+$l-fontsize: 1.2rem !default;
+$normal-fontsize: 1rem !default;
+$s-fontsize: 0.8rem !default;
+$xs-fontsize: 0.6rem !default;
+$medium-fontsize: 0.9rem !default;//14px; 
+
+$bold-font: 400;
+
+/* Media Query Ranges
+========================================================================== */
+$xxsmall-screen: 376px !default;
+$xsmall-screen: 400px !default;
+// $small-screen: 625px !default; //original value
+// $small-screen: 375px !default;
+$small-screen: 767px !default;
+$xmedium-screen: 768px !default;
+// $medium-screen: 992px !default;
+$medium-screen: 1024px !default;
+$tab-screen: 1025px !default;
+$large-screen: 1200px !default;
+$extra-large-screen: 1700px !default;
+
+$small-screen-up: $small-screen+1px !default;
+$xmedium-screen-up: $xmedium-screen+1px !default;
+$medium-screen-up: $medium-screen+1px !default;
+$large-screen-up: $large-screen+1px !default;
+$extra-large-screen-up : $extra-large-screen+1px !default;
+
+$tab-and-up: "only screen and (min-width : #{$tab-screen})" !default;
+$xmedium-and-up: "only screen and (min-width : #{$xmedium-screen-up})" !default;
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$xlarge-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$extra-large-screen-up})" !default;
+$small-and-down: "only screen and (max-width : #{$small-screen})" !default;
+$tab-and-down: "only screen and (max-width : #{$tab-screen})" !default;
+$small-only: "only screen and (min-width : #{$xxsmall-screen}) and (max-width : #{$small-screen})" !default;
+$xsmall-and-down: "only screen and (max-width : #{$xsmall-screen})" !default;
+$xxsmall-and-down: "only screen and (max-width : #{$xxsmall-screen})" !default;
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$xmedium-and-down: "only screen and (max-width : #{$xmedium-screen})" !default;
+$large-and-down: "only screen and (max-width : #{$medium-screen})" !default;
+$xmedium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$xmedium-screen})" !default;
+$medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$medium-screen})" !default;
+$tab-only: "only screen and (min-width : #{$small-screen-up}) and (max-width : #{$tab-screen})" !default;
+
+/* Grid
+========================================================================== */
+$num-cols: 12 !default;
+$gutter-width: 1.5rem !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width * 2)/3 !default;
+$border-radius: 4px;
+
+/* Color
+========================================================================== */
+//$background-color: #E9EAED;
+$background-color: white;
+$dark-color: #1d1d1d;
+$bright-color: #ffffff;
+$border-color: #E5E5E5;
+$primary-color: #00c778;
+$secondary-color: red;
+$footer-color: #cfd6e0;
+$dark-text: $dark-color;
+$light-text: #84888f;
+$bright-text: $bright-color;
+$input-focus: color("teal", "lighten-1") !default;
+$input-disabled: #bdbdbd !default;
+$error-color: $secondary-color;
+$success-color: $primary-color;
+$validation-background: #ffe6e6;
+$validation-text: $secondary-color;
+$input-active: #359ef2;
+$rectangle-bg-color: #fdf1e7;
+$disabled-bg-color: #eee;
+$light-brown: #EBDBD0;
+
+
+/* AADF New Default Styles
+   ========================================================================== */
+
+// COLORS
+$df-red-primary: #DC3224;
+$df-darker-red: #C92D21;
+$df-lighter-red: #FBEBE9;
+
+$df-green-primary: #067E41;
+$df-darker-green: #036835;
+$df-lighter-green: #E6F2EC;
+
+$df-orange-primary: #C94318;
+$df-darker-orange: #B73810;
+$df-lighter-orange: #FAECE8;
+
+$df-blue-secondary: #4B4FA6;
+$df-darker-blue-secondary: #4448A0;
+$df-lighter-blue-secondary: #EDEDF6;
+
+$df-blue-primary: #EDEDF6;
+$df-darker-blue-primary: #EDEDF6;
+$df-lighter-blue-primary: #EDEDF6;
+
+$df-yellow-star: #D97F00;
+
+$df-black-primary: #212124;
+$df-black-primary2: #333333;
+$df-darker-gray: #4C4C50;
+$df-dark-gray: #75767A;
+$df-medium-gray: #C5C9D0;
+$df-light-gray: #D9DBE0;
+$df-lighter-gray: #F8F8F8;
+
+// FONTS
+$df-normal-web: 'DM-Sans-Regular';
+$df-medium-web: 'DM-Sans-Medium';
+$df-bold-web: 'DM-Sans-Bold';
+
+//BORDERS
+$df-border-default: 1px solid $df-light-gray;
+$df-border-radius-default: 4px;
+
+
+
+/* Text Inputs + Textarea
+========================================================================== */
+$input-height: 50px !default;
+$input-border-color: $light-text !default;
+$input-border: 1px solid $input-border-color !default;
+$input-background: #fff !default;
+$input-error-color: $error-color !default;
+$input-success-color: $success-color !default;
+$input-focus-color: $input-focus !default;
+$input-font-size: $normal-fontsize !default;
+$input-transition: all 0.3s !default;
+$label-font-size: 0.8rem !default;
+$input-disabled-color: rgba(0, 0, 0, 0.1) !default;
+$input-disabled-font-color: rgba(0, 0, 0, 0.4) !default;
+$input-disabled-solid-color: $input-disabled;
+$input-disabled-border: 1px dotted $input-disabled !default;
+$input-invalid-border: 1px solid $input-error-color !default;
+$input-margin: 0 0 20px 0 !default;
+$input-padding: 20px 0 0 10px;
+$placeholder-text-color: rgba($input-border-color, 20%) !default;
+
+/* Dropdown
+========================================================================== */
+$dropdown-height: $input-height !default;
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #e8edf6 !default;
+$dropdown-hover-font-color: #67aff3 !default;
+$dropdown-padding: 10px;
+$dropdown-border-color: $border-color !default;
+$slide-duration: 0.3s;
+$dropdown-item-height: 50px !default;
+$dropdown-image-width: 27px;
+$dropdown-image-height: 18px;
+
+/* Radio Buttons
+========================================================================== */
+$radio-size-normal: 16px;
+$radio-size-small: $radio-size-normal / 2;
+$radio-fill-color: $df-blue-secondary !default;
+$radio-empty-color: $df-light-gray !default;
+$radio-border: 2px solid $df-blue-secondary !default;
+$radio-img-size-normal: 90px;
+$radio-img-size-small: $radio-img-size-normal / 1.5;
+
+/* Checkbox
+========================================================================== */
+$checkbox-small-size: 20px;
+$checkbox-large-size: $checkbox-small-size * 1.5;
+$checkbox-tick-width: 20px;
+$checkbox-tick-height: 20px;
+$checkbox-default-border-color: $border-color;
+$checkbox-background-color: $primary-color;
+
+/* Header
+========================================================================== */
+$header-background-color: $bright-color;
+$medium-header-height: 95px;
+$small-header-height: 50px;
+$tab-header-height: 60px;
+$header-item-size: $medium-header-height;
+
+/* Body
+========================================================================== */
+$content-max-width: 1200px;
+$body-padding: 10px;
+
+/* Booking Summary
+========================================================================== */
+$bs-height: 100px; //updating this value will affect bottom-booking-summary.component.ts
+$bs-small-height: 80px; //for small device
+$bs-small-padding: $body-padding / 2;
+$bs-large-padding: $body-padding * 2.5;
+$bs-common-padding: 10px;
+$bs-common-margin: 10px;
+$bs-dark-background: $dark-color;
+$bs-bright-background: $bright-color;
+$curve-height: 40px;
+$bs-content-header: $bs-height / 2;
+$bs-content-color: $primary-color;
+$side-bs-mcc-background: $bright-text;
+$booking-summary-mcc-padding: 5px;
+
+/* Payment Module
+========================================================================== */
+$payment-tab-background: #e8edf6;
+$reviewNpay-content-min-height: 400px;
+$payment-dd-options-img-size-normal: 130px;
+$payment-dd-options-img-size-small: $payment-dd-options-img-size-normal / 1.5;
+$payment-dd-options-img-size-xsmall: $payment-dd-options-img-size-normal / 2;
+/* Navbar
+========================================================================== */
+$navbar-height: 64px !default;
+$navbar-height-mobile: 56px !default;
+$navbar-font-size: 1rem !default;
+$navbar-font-color: $bright-text !default;
+$navbar-brand-font-size: 2.1rem !default;
+$navbar-custIcons-dimension: 38px;
+
+/* Loader
+========================================================================== */
+$loader-icon-dimension: 2em;
+$light-background: rgba(255, 255, 255, 0.5);
+$dark-background: rgba(0, 0, 0, 0.5);
+
+/* Side Navigation
+   ========================================================================== */
+$sidenav-font-size: 14px !default;
+$sidenav-font-color: rgba(0, 0, 0, 0.87) !default;
+$sidenav-bg-color: $bright-text !default;
+$sidenav-padding: 16px !default;
+$sidenav-item-height: 48px !default;
+
+/* Buttons
+   ========================================================================== */
+
+// Shared styles
+$button-border: none !default;
+$button-background-focus: lighten($secondary-color, 4%) !default;
+$button-font-size: 1.3rem !default;
+$button-height: 57px !default;
+$button-padding: 0 2rem !default;
+$button-radius: 2px !default;
+
+// Disabled styles
+$button-disabled-background: #dfdfdf !default;
+$button-disabled-color: #E5E5E5 !default;
+
+// Raised buttons
+$button-raised-background: $secondary-color !default;
+$button-raised-background-hover: lighten($button-raised-background,
+  5%) !default;
+$button-raised-color: #fff !default;
+
+// Large buttons
+$button-large-icon-font-size: 1.6rem !default;
+$button-large-height: $button-height * 1.5 !default;
+
+// Flat buttons
+$button-flat-color: #343434 !default;
+$button-flat-disabled-color: lighten(#999, 10%) !default;
+
+// Floating buttons
+$button-floating-background: $secondary-color !default;
+$button-floating-background-hover: $button-floating-background !default;
+$button-floating-color: #fff !default;
+$button-floating-size: 37px !default;
+$button-floating-large-size: $button-floating-size * 1.5 !default;
+$button-floating-radius: 50% !default;
+
+/* Collapsible
+   ========================================================================== */
+
+$collapsible-height: 3rem !default;
+$collapsible-header-color: #fff !default;
+$collapsible-border-color: #ddd !default;
+
+/* Error icon
+   ========================================================================== */
+$error-icon-right-position: 7px;
+$spinner-default-color: $secondary-color !default;
+$spinner-border-width: 3px;
+
+/* Colors
+   ========================================================================== */
+// $primary-color: #FF4B01;
+$primary-color: #cc007b; //best seller, price
+$primary-color-lighter: #ff6600; //footer,
+$primary-color-lightest: #ff7b23; // breadcrumbs
+$primary-color-cart-count: #ff6800; // cart count
+$primary-color-indicator: #fc6522; //carousel options
+
+$product-border-color: #edebe9;
+$small-content-padding: 13px;
+$medium-content-padding: 30px;
+$large-content-padding: 48px;
+$primary-button-color: #a5050e;
+$wishlist-heart-color: #ec323b;
+
+// $primary-font-family: "Lato", sans-serif;
+$primary-font-family: "Avenir-Next-LT-Pro-Regular";
+$primary-font-family-IE: "Avenir-Next-LT-Pro-Regular";
+$primary-font-family-light: "Lato-Light",
+sans-serif;
+// $secondary-font-family: 'Libre Baskerville', serif;
+$secondary-font-family: "Avenir-Next-LT-Pro-Demi";
+$chinese-font: "Avenir-Next-LT-Pro-Regular";
+$primary-font-bold: "Avenir-Next-LT-Pro-Regular";
+// add this
+//Regular
+// Regular Italic
+// Bold
+
+$light-pink: #eb6bb0;
+$pink: #cc007b;
+$blue: #1b4e95;
+$dark-blue: #003390;
+$lighter-grey: #bebcbc;
+$light-grey: #595959;
+$grey: #545454;
+$yellow: #f5b726;
+$white: #fff;
+
+// OURSHOP colors
+
+// Primary
+$primary_1: #F15B51;
+$primary_2: #fcbc89;
+$primary-darker: #001325;
+$primary-lighter: #255577;
+
+// Secondary
+$secondary: #222222;
+$secondary_1: #f15b50;
+$secondary_2: #f5b726;
+$secondary_3: #001325;
+$secondary_4: #d1d1d1;
+$secondary_5: #e8ae80;
+$secondary_6: #171515;
+$secondary_7: #2d2d2d;
+$secondary_8: #efb383;
+$secondary_9: #d8d8d8;
+$button_primary: #F15B51;
+$secondary_10: #dddddd;
+$secondary_11: #585858;
+$secondary_12: #a3a3a3;
+// Hover
+$hover-secondary_2: #ae8015;
+
+// ROKKI colors
+$primary: #01b6a0; //button
+// $primary-darker:#008675; //header title
+// $primary-darkest: #005C50;
+// $primary-lighter: #00b7a2; //link
+$secondary: #222222;
+$red: #ff1716;
+
+// New Design Variable
+$nd_secondary: #E5E5E5;
+$nd_secondary_5: #213342;
+
+
+//FONT-SIZE-GLOBAL
+$fz-23-web: 23px;
+$fz-21-web: 21px;
+$fz-19-web: 19px;
+$fz-17-web: 17px;
+$fz-15-web: 15px;
+$fz-13-web: 13px;
+$fz-11-web: 11px;
+
+//COLOR-GLOBAL
+$color-dark-web: #213342;
+$color-light-web: #F15B51;
+$color-plain-web: #fff;
+$color-tag-web: #F5A08B;
+$color-border1-web: #707070;
+$color-border2-web: #E5E5E5;
+
+//FONT-FAMILY-GLOBAL
+$ff-bold-web: "Avenir-Next-LT-Pro-Demi";
+$ff-normal-web: "Avenir-Next-LT-Pro-Regular";
+
