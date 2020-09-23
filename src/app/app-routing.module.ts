@@ -9,7 +9,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component'
 const routes: Routes = [
     { path: 'text-blast', component: TextBlastComponent },
     { path: 'file-upload', component: FileUploadComponent },
-    { path: 'documents', component: DocumentsComponent }
+    { path: 'documents', component: DocumentsComponent },
     { path: '', component: HomePageComponent }
   ];
 // configures NgModule imports and exports

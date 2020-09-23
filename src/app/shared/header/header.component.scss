@@ -7,6 +7,16 @@
       }
 }
 
+.tablet-and-up{
+  @media #{$small-and-down} {
+    display: none !important;
+  }
+}
+
+.menuToggle{
+  // padding: 20px 0;
+}
+
 img{
     width: 100px;
     height: auto;
@@ -22,7 +32,7 @@ img{
 }
 
 .menu-anchor{
-    color: #646464;
+    color: $third-color;
 }
 
  
@@ -42,14 +52,14 @@ img{
  #menuToggle a
  {
    text-decoration: none;
-   color: #232323;
+   color: $secondary-color;
    
    transition: color 0.3s ease;
  }
  
  #menuToggle a:hover
  {
-   color: tomato;
+   color: $primary-color;
  }
  
  
@@ -81,7 +91,7 @@ img{
    margin-bottom: 5px;
    position: relative;
    
-   background: #cdcdcd;
+   background: $third-color;
    border-radius: 3px;
    
    z-index: 1;
@@ -111,7 +121,7 @@ img{
  {
    opacity: 1;
    transform: rotate(45deg) translate(-2px, -1px);
-   background: #232323;
+   background: $secondary-color;
  }
  
  /*
@@ -142,8 +152,9 @@ img{
    margin: -100px 0 0 -50px;
    padding: 50px;
    padding-top: 125px;
-   
-   background: #ededed;
+   height: 135vh;
+   background: $fourth-color;
+   color: $secondary-color;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */

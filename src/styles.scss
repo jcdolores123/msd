@@ -301,7 +301,7 @@ p {
   background-color: white;
   border: 1px solid #426CB4;
   /* border-color: #426CB4; */
-  color: #426CB4;
+  color: $third-color;
   padding: 8px 15px;
   text-align: center;
   text-decoration: none;
@@ -314,6 +314,6 @@ p {
 
 
 .bg-header{
-  background: #426CB4;
+  background: $third-color;
   color: white;
 }

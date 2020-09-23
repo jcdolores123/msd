@@ -1,20 +1,27 @@
-  <div class="mobile-only" id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-      <a nohref><li>Home</li></a>
-      <a nohref><li>Documents</li></a>
-      <a nohref><li>Upload Files</li></a>
-      <a nohref><li>Text Blast</li></a>
-    </ul>
+  <div class="row">
+    <div class="col s3">
+      <div class="mobile-only menuToggle" id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a nohref routerLink="/"><li>Home</li></a>
+          <a nohref routerLink="documents"><li>Documents</li></a>
+          <a nohref routerLink="file-upload"><li>Upload Files</li></a>
+          <a nohref routerLink="text-blast"><li>Text Blast</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="col s6 text-center">
+      <img src="/src/assets/images/logo-2.png">
+    </div>
   </div>
 
-<div class="container padding-header">
+<div class="container padding-header tablet-and-up">
   <div class="row">
     <div class="col s2">
-      <img src="/src/assets/images/logo.png">
+      <img src="/src/assets/images/logo-2.png">
     </div>
     <div class="col s2">
      <p class="menu-padding"><a nohref class="menu-anchor" routerLink="/">Home</a></p> 
