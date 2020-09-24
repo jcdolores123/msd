@@ -1,3 +1,4 @@
+@import "../../../assets/scss/variables";
 
 
 
@@ -17,12 +18,14 @@
 .files-container{
     padding-top: 15px;
     background: white;
+    border-bottom: 1px solid $third-color;
 }
 
 .file-sorting{
-    background: #DAE0E6;
+    background: $primary-color;
     padding: 5px 0;
     font-weight: 900;
+    color: white;
 }
 
 .file-name{
@@ -61,4 +64,10 @@ ul{
 
 .bold-text{
     font-weight: 900;
+}
+
+
+.border-documents{
+    border: 1px solid $third-color;
+    border-bottom: 0;
 }
