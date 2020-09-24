@@ -7,7 +7,7 @@ import { HttpClient} from '../../services/http.services'
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
+  homeList = []
   constructor(
     private http: HttpClient
   ) { }
@@ -16,6 +16,8 @@ export class HomePageComponent implements OnInit {
 
     this.http.getHomePage().subscribe( (data:any) =>{
       console.log(data)
+
+      this.homeList = Object.assign(data)
 
     },error=> console.log(error))
 
