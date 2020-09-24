@@ -82,7 +82,7 @@ export class HttpClient {
 
         let body = {
             EventDate: eventDate,
-        	ObjectPath: filePath ? filePath.name : filePath,
+        	ObjectPath: filePath ? filePath : '',
         	Filename:"",
         	ContentType: ""
 
