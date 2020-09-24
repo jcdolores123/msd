@@ -114,4 +114,25 @@ export class HttpClient {
         return this.post(this.BASE_URL+ 'messages/email', body).pipe(map(resp =>  resp.json()));
     }
 
+    postMessage(emailArray,emailBody, emailSubject="Message blast"){
+
+        let body = {
+            MessageElements:[
+                {
+                id:"1",
+                sms:"1",
+                email:"1",
+                viber:"0",
+                fb:"0"
+                }
+            ],
+        	Message: emailBody,
+        	Subject: emailSubject
+
+
+
+        }
+        return this.post(this.BASE_URL+ 'messages', body).pipe(map(resp =>  resp.json()));
+    }
+
 }

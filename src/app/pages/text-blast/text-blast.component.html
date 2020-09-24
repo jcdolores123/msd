@@ -27,13 +27,13 @@
       <p>{{contact?.name}}</p>
     </div>
     <div class="col s3">
-      <p><span><input type="checkbox"></span>SMS</p>
+      <p><span><input type="checkbox" (change)="checkValue($event, 'sms', contact)"></span>SMS</p>
     </div>
     <div class="col s3">
       <p><span><input type="checkbox"></span>VIBER</p>
     </div>
     <div class="col s3">
-      <p><span><input type="checkbox" (change)="checkEmailValue($event, 'email', contact)"></span>EMAIL</p>
+      <p><span><input type="checkbox" (change)="checkValue($event, 'email', contact)"></span>EMAIL</p>
     </div>
   </div>
 </div>

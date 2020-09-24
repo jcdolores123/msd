@@ -21,36 +21,76 @@ export class TextBlastComponent implements OnInit {
     },error=> console.log(error))
 
   }
+   postBody = []
 
-  checkEmailValue(event, type, contact){
-    // console.log(type)
-    // console.log(event.target.checked)
-
+  checkValue(event, type, contact){
     if(contact && contact.email && event.target.checked){
       this.emailAddressArray.push(contact.email)
+      this.postBody.push(
+        {
+          id : contact.user_id,
+          sms:"0",
+          email:"0",
+          viber:"0",
+          fb:"0"
+
+        }
+      )
+      let selectedIndex = this.postBody.findIndex(data => data.id === contact.user_id);
+          if(type == 'email'){
+            if(this.postBody.length > 0){
+              if(selectedIndex >= 0){
+                this.postBody[selectedIndex].email = 1;
+              }
+            }
+          }
+          else if(type == 'sms'){
+            if(this.postBody.length > 0){
+              if(selectedIndex >= 0){
+                this.postBody[selectedIndex].sms = 1;
+              }
+            }
+          }
     }
     else if(!event.target.checked){
-        if(this.emailAddressArray.indexOf(contact.email) >=0){
-          let spliceIndex = this.emailAddressArray.indexOf(contact.email);
-          this.emailAddressArray.splice(spliceIndex, 1)
+        if(this.postBody.findIndex(data => data.id === contact.user_id) >= 0){
+          let spliceIndex = this.postBody.findIndex(data => data.id === contact.user_id);
+          let selectedIndex = this.postBody.findIndex(data => data.id === contact.user_id);
+
+          if(type == 'email'){
+            if(this.postBody.length > 0){
+              if(selectedIndex >= 0){
+                this.postBody[selectedIndex].email = 0;
+              }
+            }
+          }
+          else if(type == 'sms'){
+            if(this.postBody.length > 0){
+              if(selectedIndex >= 0){
+                this.postBody[selectedIndex].sms = 0;
+              }
+            }
+          }
+          if(this.postBody[selectedIndex].sms == 0 && this.postBody[selectedIndex].email == 0){
+            this.postBody.splice(spliceIndex, 1)
+          }
         }
     }
-    // console.log(this.emailAddressArray)
   }
 
   getMessage(){
     let messageDom = document.getElementById('textblast')
-    console.log(messageDom['value'])
     return messageDom['value'];
   }
 
   postMessage(){
 
-    this.http.postEmail(this.emailAddressArray, this.getMessage()).subscribe( (data:any) =>{
-      this.contactList = data;
+    this.http.postMessage(this.postBody, this.getMessage()).subscribe( (data:any) =>{
+      // this.contactList = data;
 
     },error=> console.log(error))
 
   }
+  
 
 }
