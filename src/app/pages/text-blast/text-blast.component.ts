@@ -76,6 +76,7 @@ export class TextBlastComponent implements OnInit {
           }
         }
     }
+
   }
 
   getMessage(){

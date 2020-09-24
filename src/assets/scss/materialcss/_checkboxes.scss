@@ -12,12 +12,12 @@ form p:last-child {
 }
 
 /* Remove default checkbox */
-// [type="checkbox"]:not(:checked),
-// [type="checkbox"]:checked {
-//   position: absolute;
-//   left: -9999px;
-//   opacity: 0;
-// }
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
 
 // Checkbox Styles
 [type="checkbox"] {
@@ -42,8 +42,8 @@ form p:last-child {
   &:not(.filled-in) + label:after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1px;
+    left: 1px;
     width: 18px;
     height: 18px;
     z-index: 0;

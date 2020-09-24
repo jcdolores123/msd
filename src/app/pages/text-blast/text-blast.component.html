@@ -27,13 +27,16 @@
       <p>{{contact?.name}}</p>
     </div>
     <div class="col s3">
-      <p><span><input type="checkbox" (change)="checkValue($event, 'sms', contact)"></span>SMS</p>
+      <input class="sms-class" type="checkbox" (change)="checkValue($event, 'sms', contact)" id="sms{{i}}" />
+      <label for="sms{{i}}">SMS</label>
     </div>
     <div class="col s3">
-      <p><span><input type="checkbox"></span>VIBER</p>
+      <input class="viber-class" type="checkbox" id="viber{{i}}" />
+      <label for="viber{{i}}">VIBER</label>
     </div>
     <div class="col s3">
-      <p><span><input type="checkbox" (change)="checkValue($event, 'email', contact)"></span>EMAIL</p>
+      <input class="email-class" type="checkbox" (change)="checkValue($event, 'email', contact)" id="email{{i}}" />
+      <label for="email{{i}}">EMAIL</label>
     </div>
   </div>
 </div>

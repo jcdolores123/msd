@@ -1,3 +1,4 @@
+@import "../../../assets/scss/variables";
 
 
 .textarea-padding{
@@ -11,4 +12,21 @@ textarea{
 
 span{
     margin-right: 10px;
+}
+.sms-class{
+    &[type="checkbox"]:checked + label:after{
+        background-color: $third-color !important;
+    }
+}
+
+.viber-class{
+    &[type="checkbox"]:checked + label:after{
+        background-color: $rich-color !important;
+    }
+}
+
+.email-class{
+    &[type="checkbox"]:checked + label:after{
+        background-color: $fourth-color !important;
+    }
 }
