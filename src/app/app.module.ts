@@ -10,6 +10,8 @@ import { TextBlastComponent } from './pages/text-blast/text-blast.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HttpModule } from '@angular/http';
 import { SeminarComponent } from './pages/seminar/seminar.component';
+import { PromotionComponent } from './pages/promotion/promotion.component';
+import { PlaylistComponent } from './pages/playlist/playlist.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { SeminarComponent } from './pages/seminar/seminar.component';
     FileUploadComponent,
     TextBlastComponent,
     HomePageComponent,
-    SeminarComponent
+    SeminarComponent,
+    PromotionComponent,
+    PlaylistComponent
   ],
   imports: [
     BrowserModule,

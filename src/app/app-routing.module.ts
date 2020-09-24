@@ -5,6 +5,8 @@ import { FileUploadComponent } from './pages/file-upload/file-upload.component'
 import { TextBlastComponent } from './pages/text-blast/text-blast.component'
 import { HomePageComponent } from './pages/home-page/home-page.component'
 import { SeminarComponent } from './pages/seminar/seminar.component'
+import { PlaylistComponent } from './pages/playlist/playlist.component'
+import { PromotionComponent } from './pages/promotion/promotion.component'
 
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
     { path: 'file-upload', component: FileUploadComponent },
     { path: 'documents', component: DocumentsComponent },
     { path: 'seminar', component: SeminarComponent },
+    { path: 'playlist', component: PlaylistComponent },
+    { path: 'promotion', component: PromotionComponent },
     { path: '', component: HomePageComponent }
   ];
 // configures NgModule imports and exports
