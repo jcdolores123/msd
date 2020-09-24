@@ -8,6 +8,8 @@ import { DocumentsComponent } from './pages/documents/documents.component';
 import { FileUploadComponent } from './pages/file-upload/file-upload.component';
 import { TextBlastComponent } from './pages/text-blast/text-blast.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { HttpModule } from '@angular/http';
+import { SeminarComponent } from './pages/seminar/seminar.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     DocumentsComponent,
     FileUploadComponent,
     TextBlastComponent,
-    HomePageComponent
+    HomePageComponent,
+    SeminarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
