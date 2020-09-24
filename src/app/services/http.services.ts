@@ -86,8 +86,13 @@ export class HttpClient {
         	Filename:"",
         	ContentType: ""
 
+            
         }
-        return this.post(this.BASE_URL+ 'upload', body).pipe(map(resp =>  resp.json()));
+        console.log(filePath)
+        let formData = new FormData();
+        formData.append('file', filePath)
+        formData.append('EventDate',eventDate)
+        return this.post(this.BASE_URL+ 'upload', formData).pipe(map(resp =>  resp.json()));
     }
 
     getDownloadFile(eventDate, fileName, contentType){

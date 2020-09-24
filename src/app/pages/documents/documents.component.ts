@@ -47,8 +47,8 @@ export class DocumentsComponent implements OnInit {
     const dateLocal = new Date(now.getTime() - offsetMs);
     const dateString = dateLocal.toISOString().slice(0, 10).replace(/-/g, "-").replace("T", " ");
     console.log(dateString)
-    let fullPath = document.getElementById('file-upload')
-    this.fileToUpload = fullPath['value'];
+    // let fullPath = document.getElementById('file-upload')
+    // this.fileToUpload = fullPath['value'];
     if(this.fileToUpload){
       this.http.postFile(this.fileToUpload , dateString).subscribe(data => {
           // do something, if upload success

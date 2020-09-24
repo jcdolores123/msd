@@ -22,6 +22,19 @@
       </button>
     </div>
   </div>
+  <div class="row region-padding">
+    <div class="col s12">
+      <label for="region">Choose a Region: </label>
+        <select name="region-name" id="region">
+          <option value="Cebu">Cebu</option>
+          <option value="Bukidnon">Bukidnon</option>
+          <option value="IloIlo">IloIlo</option>
+          <option value="Misamis Occidental">Misamis Occidental</option>
+          <option value="South Cotabato">South Cotabato</option>
+          <option value="Davao del Sur">Davao del Sur</option>
+        </select>
+    </div>
+  </div>
   <div class="row" *ngFor="let contact of contactList; let i = index">
     <div class="col s3">
       <p>{{contact?.name}}</p>
