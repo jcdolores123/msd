@@ -20,3 +20,19 @@ h3{
     color: $third-color;
 }
 
+.card-body{
+    font-size: inherit !important;
+    line-height: inherit !important;
+    @media only screen and (min-width: 992px) {
+        font-size: 20px !important;
+        line-height: 32px !important;
+        color: $fifth-color;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .category{
+        font-size: 20px;
+    }
+}

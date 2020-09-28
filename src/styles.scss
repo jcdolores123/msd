@@ -317,3 +317,74 @@ p {
   background: $third-color;
   color: white;
 }
+
+
+.open-slide{
+  transform: translateZ(0);
+}
+
+.card-header-danger{
+  background: $primary-color !important;
+}
+
+.nav-tabs .nav-item .nav-link.active{
+  background: $fourth-color !important;
+}
+
+.card-header-primary{
+  background: $lime-color !important;
+  color: $third-color !important;
+}
+
+.card-title{
+  color: $third-color !important;
+  font-weight: 400;
+}
+
+.card{
+  background: $fourth-color !important;
+}
+
+.wrapper{
+  .text-primary{
+    color: $third-color !important;
+  }
+}
+
+.material-icons{
+  color: $fifth-color !important;
+  &.download{
+    color: $third-color !important;
+  }
+} 
+
+body{
+  background: $third-color !important;
+}
+
+.sidebar{
+  background: $pastel-color !important;
+  &::before{
+    background: inherit !important;
+  }
+}
+.sidebar-wrapper{
+
+  & .nav-link{
+    background: $lime-color !important;
+    color: $third-color !important;
+  }
+
+}
+
+.btn-file{
+    background: #69b8f7 !important;
+    color: #0C2340 !important;
+    font-size: 12px !important;
+}
+
+.btn-primary{
+  &.upload{
+    background: #00857c !important;
+  }
+}

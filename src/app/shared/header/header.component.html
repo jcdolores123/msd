@@ -1,4 +1,4 @@
-  <div class="row mobile-only ">
+<div class="row mobile-only header-nav">
     <div class="col s3">
       <div class="menuToggle" id="menuToggle">
         <input type="checkbox" />
@@ -16,8 +16,11 @@
     <div class="col s6 text-center">
       <img src="/src/assets/images/logo-2.png">
     </div>
+    <div class="col s3 text-right" *ngIf="route == '/documents'">
+        <i class="material-icons arrow-left" (click)="showDocuments()">keyboard_backspace</i>
+    </div>
   </div>
-
+  <!-- 
 <div class="container padding-header tablet-and-up">
   <div class="row">
     <div class="col s2">
@@ -36,4 +39,33 @@
       <p class="menu-padding"><a nohref class="menu-anchor" routerLink="text-blast">Text Blast</a></p> 
     </div>
   </div>
+</div> -->
+
+<div class="card card-nav-tabs card-plain tablet-and-up">
+  <div class="card-header card-header-danger">
+      <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+      <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+              <ul class="nav nav-tabs" data-tabs="tabs">
+                  <li class="nav-item">
+                    <a class="" nohref="" data-toggle="tab" routerLink="/"> <img src="/src/assets/images/logo-2.png"></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{route == '/home' ? 'active' : ''}}" nohref="" data-toggle="tab" routerLink="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{route == '/documents' ? 'active' : ''}}" nohref="" data-toggle="tab" routerLink="documents">Documents</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{route == '/seminar' ? 'active' : ''}}" nohref="" data-toggle="tab" routerLink="seminar">Seminar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link {{route == '/text-blast' ? 'active' : ''}}" nohref="" data-toggle="tab" routerLink="text-blast">Text Blast</a>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </div>
 </div>
+
+<div class="close-layer" (click)="hideDocuments()" id="close-layer"></div>

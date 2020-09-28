@@ -2,12 +2,14 @@
 
 
 .textarea-padding{
-    padding-top: 20px;
+    padding-top: 500px;
 }
 
 
 textarea{
     height: 300px;
+    background-color: $fifth-color;
+    color: $third-color;
 }
 
 span{
@@ -33,4 +35,48 @@ span{
 
 .region-padding{
     padding: 10px 0;
+}
+
+// .text-blast-header{
+
+//     & .card-body{
+//         background: $primary-color;
+//         color: #fff;
+//     }
+// }
+
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+.card{
+
+    & .card-title{
+        color: $fifth-color !important;
+    }
+}
+
+.btn-primary{
+    &.dropdown{
+        background: $pastel-color !important;
+    }
+} 
+
+.dropdown-item{
+    &:hover{
+        background: $vista-color !important;
+    }
+    color: $fifth-color !important;
+}
+
+.dropdown-menu{
+    background: $rich-color !important;
+}
+
+.form-check .form-check-input:checked~.form-check-sign .check{
+    background: $rich-color !important;
 }

@@ -9,6 +9,7 @@ import { HttpClient} from '../../services/http.services'
 export class TextBlastComponent implements OnInit {
   contactList;
   emailAddressArray= []
+  showDropdown = false;
   constructor(
     private http : HttpClient
   ) { }
